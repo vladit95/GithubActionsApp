@@ -1,9 +1,9 @@
 name: Called Workflow
 on:
   workflow_call:
-    # secrets:
-    #   ENV_SECRET:
-    #     required: true
+    secrets:
+      ENV_SECRET:
+        required: true
 
 jobs:
   job1:
