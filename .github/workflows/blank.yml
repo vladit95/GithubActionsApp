@@ -13,5 +13,6 @@ jobs:
   call_workflow:
     name: call the workflow
     uses: ./.github/workflows/called_workflow.yaml
-    secrets: inherit
+    secrets:
+      ENV_SECRET: ${{ secrets.ENV_SECRET }}
     
