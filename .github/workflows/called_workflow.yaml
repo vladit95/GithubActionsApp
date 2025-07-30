@@ -1,15 +1,12 @@
 name: Called Workflow
 on:
   workflow_call:
-    secrets:
-      ENV_SECRET:
-        required: true
+
 
 jobs:
   job1:
     name: Job 1
     runs-on: ubuntu-latest
-    environment: Dev
     steps:
       - name: show
         run: |
